@@ -1,0 +1,25 @@
+{
+  "name": "nodejsapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch --progress --config webpack.conf.js",
+    "dev": "webpack --progress --config webpack.conf.js",
+    "prod": "cross-env NODE_ENV=production webpack -p --config webpack.conf.js",
+    "init": "mkdir controllers models routes && touch server.js routes/userRoutes.js controllers/userController.js models/userModel.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "", 
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
